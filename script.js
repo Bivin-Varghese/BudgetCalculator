@@ -27,7 +27,7 @@ register = () => {
     else {
         localStorage.setItem(userName, JSON.stringify(details))
         alert('Account added successfully')
-        window.location = 'login.html'
+        window.location = 'index.html'
     }
 }
 
@@ -41,7 +41,7 @@ login = () => {
         accDetails = JSON.parse(localStorage.getItem(userName))
         if (userPass == accDetails.userPass) {
             alert('Login successfull')
-            window.location = 'index.html'
+            window.location = 'home.html'
         }
         else {
             alert('Incorrect password')
